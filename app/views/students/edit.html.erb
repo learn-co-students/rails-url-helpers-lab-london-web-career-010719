@@ -1,0 +1,10 @@
+<h1>Edit Student</h1>
+
+<%= form_for @student do |f| %>
+
+  <%= f.radio_button :active, 'true' %> Active<br />
+  <%= f.radio_button :active, 'false' %> Inactive<br />
+
+  <%=  f.submit class: "form-control", value: "Update Student"%>
+
+<% end %>
