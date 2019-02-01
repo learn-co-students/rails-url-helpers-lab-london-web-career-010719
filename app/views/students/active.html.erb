@@ -1,0 +1,8 @@
+<h1>3, 2, 1 Activate</h1>
+
+
+<%= form_for @student do |s| %>
+<label for="active">Make Student Active?</label>
+<%= check_box(:student, :active) %>
+  <%= s.submit %>
+<% end %>
