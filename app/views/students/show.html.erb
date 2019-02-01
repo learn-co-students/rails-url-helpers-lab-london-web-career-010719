@@ -1,1 +1,19 @@
 <h1><%= @student.to_s %></h1>
+
+<% status = "inactive"
+
+if @student.active == true
+    status = "active"
+end
+%>
+
+
+<h2>This student is currently <%= status %></h2>
+
+<button>
+    <%= link_to 'update', 
+                 @student, 
+                             method: :patch, 
+                             data: { confirm: 'Are you sure?' } %> 
+    </button>
+    
